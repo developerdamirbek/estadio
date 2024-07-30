@@ -1,6 +1,7 @@
 $padding: 20px;
 
 .header {
+  width: 100%;
   display: flex;
   height: calc(var(--layout-header) + $padding);
   justify-content: space-between;
@@ -8,8 +9,9 @@ $padding: 20px;
   &__left {
     align-items: center;
     display: flex;
+    width: 100%;
     gap: clamp(2.5rem, 5.208vw + 0rem, 6.25rem);
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__right {

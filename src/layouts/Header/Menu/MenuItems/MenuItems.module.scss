@@ -15,8 +15,9 @@
   color: var(--text);
   display: flex;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   justify-content: center;
+  // white-space: nowrap;
 
   &--active {
     color: var(--brand);

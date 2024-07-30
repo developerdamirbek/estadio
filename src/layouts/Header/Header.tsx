@@ -1,6 +1,6 @@
 'use client'
 
-import { Box } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import classNames from 'classnames/bind'
 import { Logo } from '@/components'
 import { useAppStoreStates } from '@/stores/app'
@@ -15,18 +15,20 @@ export const Header = () => {
   const { isSidebarMini } = useAppStoreStates()
 
   return (
-    <Box component="header" className={cn('header')}>
-      <Box className={cn('header__left')}>
-        <Logo />
+    <Container maxWidth="xl">
+      <Box component="header" className={cn('header')}>
+        <Box className={cn('header__left')}>
+          <Logo />
 
-        <Menu />
-      </Box>
-
-      {!isSidebarMini && (
-        <Box className={cn('header__right')}>
-          <Actions />
+          <Menu />
         </Box>
-      )}
-    </Box>
+
+        {!isSidebarMini && (
+          <Box className={cn('header__right')}>
+            <Actions />
+          </Box>
+        )}
+      </Box>
+    </Container>
   )
 }

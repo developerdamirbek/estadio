@@ -2,11 +2,11 @@ import { PaletteOptions } from '@mui/material/styles/createPalette'
 
 export const palette: PaletteOptions = {
   primary: {
-    main: '#8c81f2',
+    main: '#009245',
   },
 
   secondary: {
-    main: '#8C81F21A',
+    main: '#0092451A',
     contrastText: '#000000',
   },
 

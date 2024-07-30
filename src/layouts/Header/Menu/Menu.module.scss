@@ -2,9 +2,9 @@
   align-items: center;
   display: flex;
   gap: var(--layout-gap);
-  margin: auto;
+  // margin: auto;
 
-  @media (max-width <= 700px) {
+  @media (max-width: 700px) {
     display: none;
   }
 }

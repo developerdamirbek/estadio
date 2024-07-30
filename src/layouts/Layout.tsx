@@ -24,10 +24,8 @@ export const Layout = ({ children, isMain, isPage }: Props) => (
     </Box>
 
     <Box component="main" className={cn('layout__content')}>
-      <CenterBlock isPage={isPage}>
-        {children}
-        <Footer />
-      </CenterBlock>
+      <CenterBlock isPage={isPage}>{children}</CenterBlock>
     </Box>
+    <Footer />
   </Box>
 )

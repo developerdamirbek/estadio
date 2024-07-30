@@ -10,11 +10,11 @@ export type MainMenuItem = {
 
 export const mainMenuList: MainMenuItem[] = [
   {
-    title: mainDictionary.courses,
+    title: mainDictionary.home,
     link: ROUTES.courses,
   },
   {
-    title: mainDictionary.blogs,
+    title: mainDictionary.aboutUs,
     link: ROUTES.blogs,
   },
 ]

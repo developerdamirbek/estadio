@@ -1,3 +1,3 @@
-import { uzDictionary } from './uz'
+import { enDictionary } from './en'
 
-export default uzDictionary
+export default enDictionary
