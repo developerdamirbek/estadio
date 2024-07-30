@@ -1,0 +1,20 @@
+$padding: 20px;
+
+.header {
+  display: flex;
+  height: calc(var(--layout-header) + $padding);
+  justify-content: space-between;
+
+  &__left {
+    align-items: center;
+    display: flex;
+    gap: clamp(2.5rem, 5.208vw + 0rem, 6.25rem);
+    justify-content: center;
+  }
+
+  &__right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}

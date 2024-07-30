@@ -1,0 +1,80 @@
+.it-benefits {
+  &__conteiner {
+    display: flex;
+    background-color: var(--brand-lighter);
+    border-radius: 40px;
+    position: relative;
+    padding: clamp(1.875rem, 2.614vw + 1.238rem, 4.375rem);
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 55%;
+
+      @media (max-width: 720px) {
+        max-width: 100%;
+      }
+
+      &-button {
+        color: var(--white);
+        width: 220px;
+
+        &:hover {
+          color: var(--white);
+        }
+
+        @media (max-width: 720px) {
+          max-width: 600px;
+          width: 100%;
+        }
+      }
+    }
+
+    &-image {
+      width: clamp(17.5rem, 11.111vw + 14.792rem, 28.125rem);
+      height: auto;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      @media (max-width: 720px) {
+        position: relative;
+      }
+    }
+
+    @media (max-width: 720px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    &-card {
+      background-color: var(--white);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: clamp(1.875rem, 2.614vw + 1.238rem, 4.375rem);
+      border-radius: 40px;
+
+      &-button {
+        color: var(--white);
+        padding: 0px 40px;
+
+        &:hover {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

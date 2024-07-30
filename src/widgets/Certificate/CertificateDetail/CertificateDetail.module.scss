@@ -1,0 +1,14 @@
+.certificate-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__content {
+    width: 100%;
+
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

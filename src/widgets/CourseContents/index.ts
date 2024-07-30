@@ -1,0 +1,1 @@
+export { CourseContents } from './CourseContents'

@@ -1,0 +1,30 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(20.625rem, 27.604vw + 7.375rem, 40.5rem), 1fr));
+  gap: 24px;
+
+  &__autor {
+    position: relative;
+
+    &-image {
+      width: 100%;
+      height: auto;
+    }
+
+    &-chip {
+      position: absolute;
+      top: clamp(0.625rem, 0.654vw + 0.466rem, 1.25rem);
+      right: clamp(0.625rem, 0.654vw + 0.466rem, 1.25rem);
+      background-color: var(--white);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(0rem, 1.307vw - 0.319rem, 1.25rem);
+  }
+}

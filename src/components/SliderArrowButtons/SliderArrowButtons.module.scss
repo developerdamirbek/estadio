@@ -1,0 +1,14 @@
+.slider-arrow-buttons {
+  display: flex;
+  gap: 10px;
+
+  &__next {
+    background-color: var(--brand);
+    color: var(--white);
+  }
+
+  &__prev {
+    background-color: var(--brand-lighter);
+    color: var(--brand);
+  }
+}

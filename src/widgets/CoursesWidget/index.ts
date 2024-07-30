@@ -1,0 +1,1 @@
+export { CoursesWidget } from './CoursesModule'

@@ -1,0 +1,43 @@
+.course-content {
+  &__wrapper {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 32px 0 16px 0;
+    font-size: clamp(1.375rem, 0.868vw + 0.958rem, 2rem);
+    font-weight: clamp(31.25rem, 8.681vw + 27.083rem, 37.5rem);
+  }
+
+  &__subject {
+    border-top: 1px solid rgba(140, 129, 242, 0.1);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-title {
+      font-size: clamp(0.875rem, 0.347vw + 0.708rem, 1.125rem);
+    }
+  }
+  &__button {
+    color: var(--white);
+    text-transform: inherit;
+    padding-left: clamp(1.25rem, 1.736vw + 0.417rem, 2.5rem);
+    padding-right: clamp(1.25rem, 1.736vw + 0.417rem, 2.5rem);
+    font-size: clamp(0.875rem, 0.347vw + 0.708rem, 1.125rem);
+    height: clamp(2.375rem, 1.91vw + 1.458rem, 3.75rem);
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      color: var(--white);
+    }
+
+    @media (max-width: 976px) {
+      margin-top: 10px;
+    }
+  }
+}

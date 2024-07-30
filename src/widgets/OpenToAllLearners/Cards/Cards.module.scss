@@ -1,0 +1,49 @@
+.cards {
+  &__card {
+    background-color: var(--white);
+    border-radius: clamp(1.875rem, 0.654vw + 1.716rem, 2.5rem);
+    padding: clamp(1.25rem, 0.654vw + 1.091rem, 1.875rem);
+    display: flex;
+    gap: clamp(1.25rem, 2.353vw + 0.676rem, 3.5rem);
+
+    @media (max-width: 750px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-image {
+      width: clamp(7.813rem, 10.131vw + 5.343rem, 17.5rem);
+      height: clamp(11.563rem, 11.765vw + 8.695rem, 22.813rem);
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+
+      &-bottom {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: start;
+
+        &-name {
+          background-color: var(--badge-light);
+          padding: 0px 0px;
+        }
+
+        &-arrow {
+          width: 10px;
+          height: 10px;
+          align-items: center;
+        }
+
+        &-role {
+          background-color: var(--green-light);
+          padding: 0px 0px;
+        }
+      }
+    }
+  }
+}

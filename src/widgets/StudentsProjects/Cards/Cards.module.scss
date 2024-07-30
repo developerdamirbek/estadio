@@ -1,0 +1,20 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(21.75rem, 17.361vw + 13.417rem, 34.25rem), 1fr));
+  gap: clamp(0.75rem, 1.294vw + 0.447rem, 2rem);
+
+  &__item {
+    position: relative;
+    border-radius: clamp(1.875rem, 0.647vw + 1.723rem, 2.5rem);
+
+    &-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &-autor {
+        background-color: var(--white);
+      }
+    }
+  }
+}

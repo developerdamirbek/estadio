@@ -1,0 +1,24 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(0.75rem, 0.777vw + 0.568rem, 1.5rem);
+
+  &__card {
+    background-color: var(--white);
+    border-radius: clamp(1.875rem, 0.647vw + 1.723rem, 2.5rem);
+    padding: clamp(1.25rem, 1.942vw + 0.795rem, 3.125rem);
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: clamp(1.25rem, 1.307vw + 0.931rem, 2.5rem);
+
+    &-image {
+      width: clamp(3rem, 1.307vw + 2.681rem, 4.25rem);
+      height: clamp(3rem, 1.307vw + 2.681rem, 4.25rem);
+    }
+
+    &-content {
+      display: grid;
+      gap: 10px;
+    }
+  }
+}

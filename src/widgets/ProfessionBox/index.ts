@@ -1,0 +1,1 @@
+export { ProfessionBox } from './ProfessionBox'

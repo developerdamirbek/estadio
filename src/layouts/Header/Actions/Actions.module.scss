@@ -1,0 +1,36 @@
+.actions {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+  &__mobile {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    @media (width >= 701px) {
+      display: none;
+    }
+  }
+
+  &__desktop {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    @media (width <= 700px) {
+      display: none;
+    }
+
+    &--item {
+      align-items: center;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      text-decoration: underline;
+    }
+  }
+}

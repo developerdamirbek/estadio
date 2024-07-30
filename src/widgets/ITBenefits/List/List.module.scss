@@ -1,0 +1,21 @@
+.list {
+  display: grid;
+  gap: clamp(0.563rem, 0.327vw + 0.483rem, 0.875rem);
+
+  &__item {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+
+    &::before {
+      background-color: var(--brand);
+      border-radius: 50%;
+      content: '';
+      display: inline-block;
+      height: 8px;
+      margin-top: 7px;
+      width: 8px;
+      flex-shrink: 0;
+    }
+  }
+}

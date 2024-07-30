@@ -1,0 +1,5 @@
+.course-bonuses {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: clamp(1.25rem, 0.777vw + 1.068rem, 2rem);
+}

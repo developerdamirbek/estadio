@@ -1,0 +1,52 @@
+.carousel {
+  height: clamp(22.875rem, 16.34vw + 13.892rem, 33.5rem);
+  width: clamp(18rem, 21.528vw + 7.667rem, 33.5rem);
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: calc(clamp(23.25rem, 77.249vw + 4.421rem, 42.5rem));
+    height: calc(clamp(18rem, 81.217vw - 1.797rem, 37.188rem));
+  }
+
+  &__pagination {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    z-index: 10;
+  }
+
+  &__slide {
+    height: clamp(22.875rem, 16.34vw + 13.892rem, 33.5rem);
+    width: clamp(18rem, 21.528vw + 7.667rem, 33.5rem);
+
+    @media (max-width: 768px) {
+      width: calc(clamp(23.25rem, 77.249vw + 4.421rem, 42.5rem));
+      height: calc(clamp(18rem, 81.217vw - 1.797rem, 37.188rem));
+    }
+
+    &-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 60%) 105.78%);
+    }
+  }
+
+  &__slide-content {
+    position: absolute;
+    left: 50px;
+    bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    z-index: 11;
+    color: var(--white);
+  }
+}

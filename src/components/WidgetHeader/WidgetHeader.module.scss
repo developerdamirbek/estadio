@@ -1,0 +1,27 @@
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    &__title {
+      font-family: 'PP Neue Montreal', sans-serif;
+      font-weight: 600;
+    }
+
+    &-go-back {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+
+      &-icon {
+        color: var(--brand);
+      }
+    }
+  }
+}

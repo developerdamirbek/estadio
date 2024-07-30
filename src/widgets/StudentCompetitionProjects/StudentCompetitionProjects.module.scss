@@ -1,0 +1,5 @@
+.student-competition-projects {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.875rem, 0.868vw + 1.458rem, 2.5rem);
+}

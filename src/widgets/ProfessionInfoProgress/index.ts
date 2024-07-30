@@ -1,0 +1,1 @@
+export { ProfessionInfoProgress } from './ProfessionInfoProgress'

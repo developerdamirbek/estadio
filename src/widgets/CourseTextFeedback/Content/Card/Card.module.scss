@@ -1,0 +1,33 @@
+.card {
+  &__slide {
+    background-color: var(--white);
+    border-radius: clamp(1.875rem, 0.654vw + 1.716rem, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: clamp(0.938rem, 0.98vw + 0.699rem, 1.875rem);
+
+    &-avatar {
+      display: flex;
+      gap: clamp(0.625rem, 0.392vw + 0.529rem, 1rem);
+
+      &-role {
+        color: var(--brand);
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &-star {
+        color: var(--brand-lighter);
+
+        &-precision {
+          color: var(--peach);
+        }
+      }
+    }
+  }
+}

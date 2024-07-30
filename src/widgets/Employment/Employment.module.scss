@@ -1,0 +1,108 @@
+.employment {
+  border-radius: clamp(1.875rem, 0.868vw + 1.458rem, 2.5rem);
+  padding: clamp(1.875rem, 1.736vw + 1.042rem, 3.125rem);
+  background-color: var(--brand);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.389vw + 0.333rem, 2rem);
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-title {
+      font-size: clamp(1.625rem, 1.736vw + 0.792rem, 2.875rem);
+      font-weight: 500;
+      color: var(--white);
+      line-height: clamp(2rem, 2.778vw + 0.667rem, 4rem);
+    }
+
+    &-subtitle {
+      font-size: clamp(0.875rem, 0.347vw + 0.708rem, 1.125rem);
+      color: var(--white);
+      line-height: clamp(1.125rem, 0.521vw + 0.875rem, 1.5rem);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 1.389vw + 0.333rem, 2rem);
+  }
+
+  &__slider {
+    width: 100%;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(0.75rem, 1.042vw + 0.25rem, 1.5rem);
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      border-radius: 20px;
+      background-color: var(--white);
+      padding: clamp(1.25rem, 1.736vw + 0.417rem, 2.5rem);
+      gap: clamp(0.75rem, 0.694vw + 0.417rem, 1.25rem);
+
+      &:nth-child(1) {
+        .employment__details-item-icon {
+          background-color: var(--green-light);
+          color: var(--green);
+        }
+      }
+
+      &:nth-child(2) {
+        .employment__details-item-icon {
+          background-color: var(--grass-pink-light);
+          color: var(--grass-pink);
+        }
+      }
+
+      &:nth-child(3) {
+        .employment__details-item-icon {
+          background-color: var(--blue-light);
+          color: var(--blue);
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      &-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: var(--brand);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      &-title {
+        display: flex;
+        align-items: center;
+        font-size: clamp(0.875rem, 0.347vw + 0.708rem, 1.125rem);
+        font-weight: 600;
+        line-height: clamp(1.188rem, 0.521vw + 0.938rem, 1.563rem);
+      }
+    }
+  }
+}

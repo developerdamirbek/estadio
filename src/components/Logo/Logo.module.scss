@@ -1,0 +1,6 @@
+.logo {
+  &__img {
+    height: clamp(3.5rem, 4.497vw + 2.404rem, 4.563rem);
+    width: clamp(2.625rem, 5.291vw + 1.335rem, 3.875rem);
+  }
+}

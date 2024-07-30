@@ -1,0 +1,24 @@
+.menuItems {
+  align-items: center;
+  display: flex;
+  gap: var(--layout-gap);
+
+  &.menuItems--open {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.menuItem__item {
+  align-items: center;
+  color: var(--text);
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: center;
+
+  &--active {
+    color: var(--brand);
+  }
+}

@@ -1,0 +1,107 @@
+.course-enrollment-benefits {
+  background-color: var(--brand);
+  border-radius: clamp(1.875rem, 0.868vw + 1.458rem, 2.5rem);
+  overflow: hidden;
+  padding-bottom: clamp(1.875rem, 1.736vw + 1.042rem, 3.125rem);
+  padding-top: clamp(1.875rem, 6.076vw - 1.042rem, 6.25rem);
+  padding-left: clamp(1.875rem, 6.076vw - 1.042rem, 6.25rem);
+  padding-right: clamp(1.875rem, 6.076vw - 1.042rem, 6.25rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3.75rem, 5.556vw + 1.083rem, 7.75rem);
+
+  @media (max-width: 768px) {
+    gap: 12px;
+  }
+
+  &__image {
+    width: clamp(20rem, 22.569vw + 9.167rem, 36.25rem);
+    height: clamp(18rem, 20.313vw + 8.25rem, 32.625rem);
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 204px;
+    }
+
+    &-author {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+
+      @media (max-width: 768px) {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+      }
+
+      &--chip {
+        background-color: var(--white);
+      }
+    }
+
+    &-title {
+      font-size: clamp(1.625rem, 1.736vw + 0.792rem, 2.875rem);
+      color: var(--white);
+      font-weight: 500;
+      margin-bottom: clamp(1.25rem, 1.736vw + 0.417rem, 2.5rem);
+      line-height: 1.2;
+    }
+
+    &-button {
+      background-color: var(--white);
+      color: var(--text);
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    z-index: 2;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__card {
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: clamp(0.938rem, 0.434vw + 0.729rem, 1.25rem);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-icon {
+      color: var(--brand);
+    }
+
+    &-title {
+      font-size: clamp(0.875rem, 0.174vw + 0.792rem, 1rem);
+    }
+
+    &:last-child {
+      @media (max-width: 768px) {
+        grid-column: span 2;
+      }
+    }
+  }
+}

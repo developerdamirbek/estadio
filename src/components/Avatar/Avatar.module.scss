@@ -1,0 +1,15 @@
+.avatar {
+  border-radius: 100%;
+  padding: 3px;
+
+  &--bordered {
+    border: 2px solid var(--yellow);
+  }
+
+  &__image {
+    background-color: var(--brand-lighter);
+    color: var(--brand);
+    font-size: clamp(0.938rem, 0.327vw + 0.858rem, 1.25rem);
+    font-weight: 600;
+  }
+}

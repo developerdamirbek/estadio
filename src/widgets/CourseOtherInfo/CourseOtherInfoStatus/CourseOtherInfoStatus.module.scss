@@ -1,0 +1,23 @@
+.course-other-info-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: clamp(1.25rem, 1.503vw + 0.884rem, 2.688rem);
+  border-radius: 20px;
+
+  &--warning {
+    background-color: var(--brand-lighter);
+    color: var(--brand);
+  }
+
+  &--success {
+    background-color: var(--green-light);
+    color: var(--green);
+  }
+
+  &__content {
+    color: var(--text);
+    font-weight: 600;
+  }
+}

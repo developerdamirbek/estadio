@@ -1,0 +1,117 @@
+:root {
+  /* brand  */
+  --brand: #8c81f2;
+  --brand-secondary: color-mix(in srgb, var(--brand) 10%, #fff);
+  --brand-secondary-hover: color-mix(in srgb, var(--brand) 30%, #fff);
+  --brand-dark: color-mix(in srgb, var(--brand) 80%, #000);
+  --brand-light: color-mix(in srgb, var(--brand) 80%, #fff);
+  --brand-lighter: color-mix(in srgb, var(--brand) 20%, #fff);
+
+  /* text  */
+  --text: #000;
+  --text-brand: #333;
+  --text-secondary: #828282;
+  --text-black300: #454545;
+  --text-black400: #333;
+
+  /* additional */
+  --transparent: #fff0;
+  --info: #80d5ff;
+  --danger: #f00;
+  --separator: #8c81f21a;
+  --yellow: #fff07d;
+  --yellow-light: #fff07d1a;
+  --white: #fff;
+  --green: #54ed9c;
+  --green-light: #54ed9c1a;
+  --blue-light: #80d5ff1a;
+  --blue: #80d5ff;
+  --grass-pink-light: #ce80ff1a;
+  --grass-pink: #ce80ff;
+  --pink-light: #ffbac4;
+  --pink: #ce80ff;
+  --pink-lighter: color-mix(in srgb, var(--pink), #fff 90%);
+  --silver300: #e3e3e3;
+  --silver100: #f9f9f9;
+  --peach: #ffac7d;
+
+  /* hover */
+  --white-hover: #f8f8f8;
+  --link-hover: color-mix(in srgb, var(--brand) 70%, #000);
+
+  /* background */
+  --public-bg: #eef2f5;
+  --light-green-bg: #d0f7e3;
+  --light-brand-bg: #ead1ff;
+  --light-badge-bg: #ffd9d1;
+  --light-blue-bg: #d1f0ff;
+  --card-bg: #f5f5f5;
+
+  /* Badge */
+  --badge: #ff8870;
+  --badge-light: #ff88701a;
+
+  /* layout */
+  --layout-bg: #f9f9f9;
+  --layout-gap: 32px;
+  --layout-gap-botton: clamp(1.25rem, 3.472vw - 0.417rem, 3.75rem);
+  --layout-gap-mobile: 12px;
+  --layout-header: 77px;
+  --layout-max-width: 1320px;
+
+  /* fForm field */
+  --field-border-radius: 100px;
+  --field-padding-top: 11px;
+  --field-padding-left: 20px;
+
+  /* border radius */
+  --border-radius: 20px;
+  --border-radius-full: 100%;
+  --border-color: #dcdcdc;
+  --border-step: #54ed9c;
+  --border-silver: #ededed;
+}
+
+/* Global style */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'PP Neue Montreal', Arial, sans-serif;
+}
+
+html,
+body {
+  color: var(--text);
+  font-size: 16px;
+  height: 100%;
+  line-height: 16px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--brand);
+
+  &:hover {
+    color: var(--link-hover);
+  }
+}

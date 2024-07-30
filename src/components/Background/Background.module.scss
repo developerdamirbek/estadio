@@ -1,0 +1,46 @@
+@import url('@/styles/mixins.scss');
+
+.background {
+  color: transparent;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  &::before,
+  &::after {
+    animation: 22s -27s bgMove infinite ease-in-out alternate;
+    content: '.';
+    height: 3em;
+    left: 50%;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 50%;
+    width: 3em;
+  }
+
+  &::before {
+    @include dots(40);
+
+    animation-delay: -27s;
+    animation-duration: 22s;
+  }
+
+  &::after {
+    @include dots(40);
+
+    animation-delay: -32s;
+    animation-duration: 23s;
+  }
+}
+
+@keyframes bgMove {
+  from {
+    transform: rotate(0deg) scale(12) translateX(-20px);
+  }
+
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}

@@ -1,0 +1,69 @@
+@import '@/styles/mixins';
+
+.course-mentors {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__wrapper {
+    padding: 50px;
+    border-radius: 40px;
+    background-color: var(--white);
+
+    @include size(tablet) {
+      padding: 30px;
+      border-radius: 30px;
+    }
+  }
+
+  &__full-name {
+    margin-bottom: 16px;
+  }
+
+  &__job-title {
+    margin-bottom: 64px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+    grid-template-areas: 'text text image';
+
+    @include size(mobile) {
+      grid-template-columns: auto;
+      grid-template-areas:
+        'image'
+        'text';
+    }
+  }
+
+  &__left {
+    grid-area: text;
+  }
+
+  &__right {
+    grid-area: image;
+  }
+
+  &__media {
+    border-radius: 30px;
+    @media (width <= 992px) {
+      width: 280px;
+      height: auto;
+    }
+
+    @include size(mobile) {
+      display: block;
+      width: 70%;
+      margin: 0 auto 20px;
+    }
+
+    @media (width <= 592px) {
+      width: 95%;
+    }
+  }
+}

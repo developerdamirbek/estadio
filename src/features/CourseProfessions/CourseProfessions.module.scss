@@ -1,0 +1,18 @@
+@import '@/styles/mixins';
+
+.course-professions {
+  align-items: flex-start;
+
+  &__single {
+    margin: 5px 0;
+    padding: 12px 24px;
+    border-radius: 100px;
+    border-top: 1px solid #0000001f;
+    @include text-format(18px, 500, 21px, var(--text-black300));
+
+    &:global(.Mui-selected) {
+      background-color: var(--brand);
+      color: var(--white);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.students-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.25rem, 0.777vw + 1.068rem, 2rem);
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-button {
+      color: var(--white);
+      padding: 0px 40px;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+}
