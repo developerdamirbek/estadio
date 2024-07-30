@@ -8,6 +8,8 @@
   overflow: hidden;
 
   &__header {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
     &--white {
       background-color: var(--white);
     }
@@ -23,8 +25,7 @@
 
   &__center {
     margin: 0 auto;
-    max-width: var(--layout-max-width);
-    padding: 0 clamp(0.563rem, 5.122vw - 0.686rem, 1.875rem);
+    // max-width: var(--layout-max-width);
     width: 100%;
 
     @media only screen and (max-width: 475px) {

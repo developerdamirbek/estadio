@@ -1,6 +1,6 @@
 :root {
   /* brand  */
-  --brand: #8c81f2;
+  --brand: #009245;
   --brand-secondary: color-mix(in srgb, var(--brand) 10%, #fff);
   --brand-secondary-hover: color-mix(in srgb, var(--brand) 30%, #fff);
   --brand-dark: color-mix(in srgb, var(--brand) 80%, #000);

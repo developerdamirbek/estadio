@@ -5,6 +5,7 @@ import Link from 'next/link'
 import PhoneIcon from '@/assets/icons/phone.svg'
 import { PUBLIC_PHONE } from '@/constants'
 import { useAppStoreActions } from '@/stores/app'
+import { LanguageSelect } from '../Menu/Languages'
 
 import styles from './Actions.module.scss'
 
@@ -20,6 +21,8 @@ export const Actions = () => {
   return (
     <Box className={cn('actions')}>
       <Box className={cn('actions__mobile')}>
+        <LanguageSelect />
+
         <IconButton onClick={handleOpenAction}>
           <MenuIcon />
         </IconButton>

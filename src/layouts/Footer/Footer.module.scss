@@ -15,8 +15,8 @@
     padding: 40px;
     margin-bottom: clamp(0rem, 3.008vw - 1.109rem, 2.5rem);
     background-color: var(--white);
-    opacity: 0.9;
-    border-radius: 40px;
+    opacity: 0.8;
+    border-radius: 30px;
 
     &-top {
       display: flex;
@@ -51,7 +51,7 @@
   }
 
   @media (max-width: 600px) {
-    background-image: none;
+    // background-image: none;
     background-color: var(--white);
     max-height: none;
     height: auto;

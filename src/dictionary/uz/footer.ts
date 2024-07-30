@@ -1,3 +1,3 @@
 export const footerDictionary = {
-  rightsReserved: `© “Najot Ta'lim”, 2024 - Barcha huquqlar himoyalangan.`,
+  copyright: '© Estadio 2024. All rights reserved.',
 }

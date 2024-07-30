@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Box, useMediaQuery } from '@mui/material'
 import classNames from 'classnames/bind'
 import { useAppStoreActions, useAppStoreStates } from '@/stores/app'
+import { LanguageSelect } from './Languages'
 import { MenuItems } from './MenuItems'
 import { MobileDrawer } from './MobileDrawer'
 
@@ -19,11 +20,14 @@ export const Menu = () => {
     if (isScreenLarge && isSidebarMini) {
       toggleSidebar(false)
     }
-  }, [isScreenLarge, isSidebarMini])
+  }, [isScreenLarge, isSidebarMini, toggleSidebar])
 
   return (
     <Box component="nav" className={cn('menu')}>
       <MenuItems />
+
+      {/* Assuming you have a state and handler for language selection */}
+      <LanguageSelect />
 
       <MobileDrawer />
     </Box>

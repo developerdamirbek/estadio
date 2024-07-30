@@ -1,0 +1,17 @@
+export const loginDictionary = {
+  enter: 'Login',
+  enterForGoogle: 'via Google',
+  login: 'Phone number or email',
+  loginError: 'Invalid login',
+  maxLoginError: 'Maximum 50 characters',
+  minLoginError: 'At least 6 characters',
+  minPasswordError: 'At least 3 characters',
+  password: 'Password',
+  passwordError: 'Invalid password',
+  loginTitle: 'Login',
+  loginDescription: 'Sign in for further action',
+  rememberMe: 'Remember me',
+  forgotPassword: 'Reset password',
+  registry: 'Register',
+  enterCorrectPhoneNumber: 'Enter your phone number',
+}
